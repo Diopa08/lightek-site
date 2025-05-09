@@ -2,17 +2,18 @@
     <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <!-- Logo -->
       <a (click)="navigateTo('/')" class="flex items-center gap-2 text-white text-xl font-bold">
-        <img src="assets/logo-lighttek.png" alt="LIGHTEK" class="h-8 w-8 object-contain" />
-        LIGHTEK
+        <img src="assets/lightek-logo.png" alt="LIGHTEK" class="h-16 w-16 object-contain drop-shadow-xl"/>
+       
       </a>
-  
+      
       <!-- Menu desktop -->
       <ul class="hidden md:flex gap-6 text-white font-medium text-sm">
-        <li><a (click)="navigateTo('/')" class="hover:text-yellow-300 transition">Accueil</a></li>
-        <li><a (click)="navigateTo('/about')" class="hover:text-yellow-300 transition">À propos</a></li>
-        <li><a (click)="navigateTo('/services')" class="hover:text-yellow-300 transition">Services</a></li>
-        <li><a (click)="navigateTo('/contact')" class="hover:text-yellow-300 transition">Contact</a></li>
-      </ul>
+          <li><a href="#home" class="hover:text-yellow-300 transition">Accueil</a></li>
+            <li><a href="#about" class="hover:text-yellow-300 transition">À propos</a></li>
+            <li><a href="#services" class="hover:text-yellow-300 transition">Services</a></li>
+            <li><a href="#contact" class="hover:text-yellow-300 transition">Contact</a></li>
+          </ul>
+           
   
       <!-- Hamburger menu mobile -->
       <div class="md:hidden">
