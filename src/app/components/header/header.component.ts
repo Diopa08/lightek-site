@@ -22,6 +22,6 @@ export class HeaderComponent {
 
   navigateTo(path: string) {
     this.router.navigate([path]);
-    this.toggleMenu(); // Fermer le menu mobile après avoir cliqué
+    this.toggleMenu(); 
   }
 }
