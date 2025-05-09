@@ -22,6 +22,6 @@ export class HeaderComponent {
 
   navigateTo(path: string) {
     this.router.navigate([path]);
-    this.toggleMenu(); 
+    this.toggleMenu(); //sdfgh
   }
 }
