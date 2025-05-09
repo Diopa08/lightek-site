@@ -1,17 +1,17 @@
 <header class="fixed top-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/20 shadow-md">
     <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <!-- Logo -->
-      <a routerLink="/" class="flex items-center gap-2 text-white text-xl font-bold">
+      <a (click)="navigateTo('/')" class="flex items-center gap-2 text-white text-xl font-bold">
         <img src="assets/logo-lighttek.png" alt="LIGHTEK" class="h-8 w-8 object-contain" />
         LIGHTEK
       </a>
   
       <!-- Menu desktop -->
       <ul class="hidden md:flex gap-6 text-white font-medium text-sm">
-        <li><a routerLink="/" routerLinkActive="text-yellow-300" class="hover:text-yellow-300 transition">Accueil</a></li>
-        <li><a routerLink="/about" routerLinkActive="text-yellow-300" class="hover:text-yellow-300 transition">À propos</a></li>
-        <li><a routerLink="/services" routerLinkActive="text-yellow-300" class="hover:text-yellow-300 transition">Services</a></li>
-        <li><a routerLink="/contact" routerLinkActive="text-yellow-300" class="hover:text-yellow-300 transition">Contact</a></li>
+        <li><a (click)="navigateTo('/')" class="hover:text-yellow-300 transition">Accueil</a></li>
+        <li><a (click)="navigateTo('/about')" class="hover:text-yellow-300 transition">À propos</a></li>
+        <li><a (click)="navigateTo('/services')" class="hover:text-yellow-300 transition">Services</a></li>
+        <li><a (click)="navigateTo('/contact')" class="hover:text-yellow-300 transition">Contact</a></li>
       </ul>
   
       <!-- Hamburger menu mobile -->
@@ -28,10 +28,10 @@
     <!-- Mobile menu -->
     <div *ngIf="menuOpen" class="md:hidden px-6 pb-4">
       <ul class="flex flex-col gap-4 text-white font-medium text-sm">
-        <li><a routerLink="/" (click)="toggleMenu()" class="hover:text-yellow-300">Accueil</a></li>
-        <li><a routerLink="/about" (click)="toggleMenu()" class="hover:text-yellow-300">À propos</a></li>
-        <li><a routerLink="/services" (click)="toggleMenu()" class="hover:text-yellow-300">Services</a></li>
-        <li><a routerLink="/contact" (click)="toggleMenu()" class="hover:text-yellow-300">Contact</a></li>
+        <li><a (click)="navigateTo('/')" class="hover:text-yellow-300">Accueil</a></li>
+        <li><a (click)="navigateTo('/about')" class="hover:text-yellow-300">À propos</a></li>
+        <li><a (click)="navigateTo('/services')" class="hover:text-yellow-300">Services</a></li>
+        <li><a (click)="navigateTo('/contact')" class="hover:text-yellow-300">Contact</a></li>
       </ul>
     </div>
   </header>

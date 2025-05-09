@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 import { CommonModule } from '@angular/common';
 
@@ -13,7 +14,14 @@ import { CommonModule } from '@angular/common';
 export class HeaderComponent {
   menuOpen = false;
 
+  constructor(private router: Router) {}
+
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
+  }
+
+  navigateTo(path: string) {
+    this.router.navigate([path]);
+    this.toggleMenu(); // Fermer le menu mobile après avoir cliqué
   }
 }
