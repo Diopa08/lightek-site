@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.glass {
+    @apply bg-white/10 backdrop-blur-md rounded-xl shadow-lg border border-white/30 p-6;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  .glass {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg;
+  }
+  

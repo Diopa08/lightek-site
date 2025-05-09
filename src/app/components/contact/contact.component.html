@@ -1,0 +1,42 @@
+<section class="min-h-screen bg-gradient-to-br from-black to-blue-950 text-white px-6 py-20 flex items-center justify-center">
+    <div class="max-w-2xl w-full space-y-8 animate-fadeInUp">
+  
+      <h2 class="text-4xl font-extrabold text-center text-yellow-400">Contactez-nous</h2>
+  
+      <form (ngSubmit)="sendEmail()" class="space-y-5">
+        <input 
+          type="text" 
+          name="user_name"
+          [(ngModel)]="form.name" required
+          placeholder="Nom complet" 
+          class="w-full p-4 bg-white/10 border border-white/20 rounded-lg placeholder-gray-300 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 transition" 
+          required
+        />
+        <input 
+          type="email" 
+          name="user_email" [(ngModel)]="form.email" required 
+          placeholder="Adresse email" 
+          class="w-full p-4 bg-white/10 border border-white/20 rounded-lg placeholder-gray-300 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 transition" 
+          required
+        />
+        <textarea 
+        name="message" [(ngModel)]="form.message" required
+          rows="5" 
+          placeholder="Votre message..." 
+          class="w-full p-4 bg-white/10 border border-white/20 rounded-lg placeholder-gray-300 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 transition" 
+          required
+        ></textarea>
+  
+        <button 
+          type="submit" 
+          class="w-full bg-yellow-400 text-black font-bold py-3 rounded-lg hover:bg-yellow-300 transition"
+        >
+          Envoyer
+        </button>
+      </form>
+  
+      
+  
+    </div>
+  </section>
+  
