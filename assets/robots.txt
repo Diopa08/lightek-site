@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://ton-domaine.com/sitemap.xml
+Sitemap: https://diopa08.github.io/lightek-site/assets/sitemap.xml
